@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+	<webBean>
+		<webUrl>http://rmfygg.court.gov.cn/psca/lgnot/bulletin/page/0_0.html
+		</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableName>court_announcement</tableName>
+		<compareAtrr>bulletin_time</compareAtrr>
+		<tableXpath>
+			<bodyXPath>.contentDiv > table:nth-child(2) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td:nth-child(1) > a:nth-child(1)</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!-- 公告类型 -->
+			<announcement_type>.ft1616</announcement_type>
+			<!-- 公告人 ..法院 -->
+			<notice_people>.d23 > p:nth-child(1)</notice_people>
+			<!-- 当事人..法人 -->
+			<parties>p.pt10</parties>
+			<!-- 公告时间 -->
+			<bulletin_time>p.ft1424:nth-child(4)</bulletin_time>
+			<!-- 公告内容 -->
+			<content>.d22 > p:nth-child(1)</content>
+			<!-- 刊登版面 -->
+			<published_edition>p.ft1424:nth-child(2)</published_edition>
+			<!-- 刊登日期 -->
+			<posting_date>p.ft1424:nth-child(3)</posting_date>
+			<detailurl></detailurl>
+		</detailXpath>
+		<nextPageXpath>http://rmfygg.court.gov.cn/psca/lgnot/bulletin/page/0_@@@.html
+		</nextPageXpath>
+	</webBean>
+
+
+</root>

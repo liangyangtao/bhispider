@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<webBean>
+		<webUrl>http://source.chinaventure.com.cn/list/2/0/0/0/1
+		</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableName>chinaventure_financing</tableName>
+		<compareAtrr>deal_announced_time</compareAtrr>
+		<tableXpath>
+			<bodyXPath>.table_date03 > tbody</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath> td:nth-child(6) > a</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!-- 产品名称 -->
+			<pro_name>.left_h1</pro_name>
+			<!-- 时间 -->
+			<pro_time>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(1) > td:nth-child(2)
+			</pro_time>
+			<!--地区 -->
+			<pro_area>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(2) > td:nth-child(2)
+			</pro_area>
+			<!-- 企业性质 -->
+			<enterprise_type>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(3) > td:nth-child(2)
+			</enterprise_type>
+			<!-- 融资性质 -->
+			<financing_type>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(4) > td:nth-child(2)
+			</financing_type>
+			<!-- 融资金额 -->
+			<financing_money>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(5) > td:nth-child(2)
+			</financing_money>
+			<!-- 股权 -->
+			<equity>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(6) > td:nth-child(2)
+			</equity>
+			<!-- 企业估值(US$M) -->
+			<business_valuation>table.table_cw:nth-child(3) > tbody:nth-child(1)
+				> tr:nth-child(7) > td:nth-child(2)
+			</business_valuation>
+			<!-- 行业分类 -->
+			<industry_category>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(8) > td:nth-child(2)
+			</industry_category>
+			<!-- 融资方 -->
+			<target_enterprise>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(9) > td:nth-child(2)
+			</target_enterprise>
+			<!--投资方 -->
+			<buyer_company>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(10) > td:nth-child(2)
+			</buyer_company>
+			<!-- 投资银行 -->
+			<investment_bank>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(11) > td:nth-child(2)
+			</investment_bank>
+			<!-- 律师事务所 -->
+			<law_firm>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(12) > td:nth-child(2)
+			</law_firm>
+			<!--会计事务所 -->
+			<accounting_firm>table.table_cw:nth-child(3) > tbody:nth-child(1) >
+				tr:nth-child(13) > td:nth-child(2)
+			</accounting_firm>
+			<!-- 交易描述 -->
+			<business_transaction>div.left680 > table[style=margin-top:-3px;]
+			</business_transaction>
+			<detailurl></detailurl>
+		</detailXpath>
+		<nextPageXpath>http://source.chinaventure.com.cn/list.php?catid=2&type=0&industry=0&keyword2=0&pageNo=@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://source.chinaventure.com.cn/list/1/0/0/0/1
+		</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableName>chinaventure_mergerevent</tableName>
+		<compareAtrr>deal_announced_time</compareAtrr>
+		<tableXpath>
+			<bodyXPath>.table_date03 > tbody</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath> td:nth-child(6) > a</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!-- 产品名称 -->
+			<pro_name>.left_h1</pro_name>
+			<!-- 交易类型 -->
+			<transaction_type>.table_cw > tbody:nth-child(1) > tr:nth-child(1) >
+				td:nth-child(2)
+			</transaction_type>
+			<!-- 交易方式 -->
+			<trading_manner>.table_cw > tbody:nth-child(1) > tr:nth-child(2) >
+				td:nth-child(2)
+			</trading_manner>
+			<!-- 是否跨境并购 -->
+			<whether_cross_border>.table_cw > tbody:nth-child(1) >
+				tr:nth-child(3) > td:nth-child(2)
+			</whether_cross_border>
+			<!-- 是否关联交易 -->
+			<whether_related_party>.table_cw > tbody:nth-child(1) >
+				tr:nth-child(4) > td:nth-child(2)
+			</whether_related_party>
+			<!--交易态度 -->
+			<trading_attitude>.table_cw > tbody:nth-child(1) > tr:nth-child(5) >
+				td:nth-child(2)
+			</trading_attitude>
+			<!-- 交易状态 -->
+			<transaction_status>.table_cw > tbody:nth-child(1) > tr:nth-child(6)
+				> td:nth-child(2)
+			</transaction_status>
+			<!-- 交易宣布时间 -->
+			<deal_announced_time>.table_cw > tbody:nth-child(1) > tr:nth-child(7)
+				> td:nth-child(2)
+			</deal_announced_time>
+			<!-- 交易结束时间 -->
+			<transactions_over_time>.table_cw > tbody:nth-child(1) >
+				tr:nth-child(8) > td:nth-child(2)
+			</transactions_over_time>
+			<!-- 交易金额 -->
+			<transaction_amount>.table_cw > tbody:nth-child(1) > tr:nth-child(9)
+				> td:nth-child(2)
+			</transaction_amount>
+			<!-- 企业估值(US$M) -->
+			<business_valuation>.table_cw > tbody:nth-child(1) > tr:nth-child(10)
+				> td:nth-child(2)
+			</business_valuation>
+			<!-- 支付方式 -->
+			<pattern_payment>.table_cw > tbody:nth-child(1) > tr:nth-child(11) >
+				td:nth-child(2)
+			</pattern_payment>
+			<!-- 行业分类 -->
+			<industry_category>.table_cw > tbody:nth-child(1) > tr:nth-child(12)
+				> td:nth-child(2)
+			</industry_category>
+			<!-- 标的企业 -->
+			<target_enterprise>.table_cw > tbody:nth-child(1) > tr:nth-child(13)
+				> td:nth-child(2)
+			</target_enterprise>
+			<!--买方企业 -->
+			<buyer_company>.table_cw > tbody:nth-child(1) > tr:nth-child(14) >
+				td:nth-child(2)
+			</buyer_company>
+			<!-- 投资银行 -->
+			<investment_bank>.table_cw > tbody:nth-child(1) > tr:nth-child(15) >
+				td:nth-child(2)
+			</investment_bank>
+			<!-- 律师事务所 -->
+			<law_firm>.table_cw > tbody:nth-child(1) > tr:nth-child(16) >
+				td:nth-child(2)
+			</law_firm>
+			<!--会计事务所 -->
+			<accounting_firm>.table_cw > tbody:nth-child(1) > tr:nth-child(17) >
+				td:nth-child(2)
+			</accounting_firm>
+			<!--资产评估公司 -->
+			<evaluation_company>.table_cw > tbody:nth-child(1) > tr:nth-child(18)
+				> td:nth-child(2)
+			</evaluation_company>
+			<!-- 交易描述 -->
+			<business_transaction>.left680 > p:nth-child(5)
+			</business_transaction>
+			<detailurl></detailurl>
+		</detailXpath>
+		<nextPageXpath>http://source.chinaventure.com.cn/list.php?catid=1&type=0&industry=0&keyword2=0&pageNo=@@@
+		</nextPageXpath>
+	</webBean>
+
+
+	<webBean>
+		<webUrl>http://www.yanglee.com/product/product_Lists.aspx?ptype=105015016007
+		</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<tableName>yanglee_silverletter</tableName>
+		<compareAtrr>issue_date</compareAtrr>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableXpath>
+			<bodyXPath>.table1</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td > a</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!--产品名称 -->
+			<pro_name>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(1) > td:nth-child(2)
+			</pro_name>
+			<!-- 产品类型 -->
+			<pro_type>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(2) > td:nth-child(2)
+			</pro_type>
+			<!-- 产品状态 -->
+			<pro_state>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(2) > td:nth-child(4)
+			</pro_state>
+			<!-- 发行机构 -->
+			<pub_house>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(3) > td:nth-child(2)
+			</pub_house>
+			<!-- 项目经理 -->
+			<pro_manage>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(3) > td:nth-child(4)
+			</pro_manage>
+			<!-- 理财币种 -->
+			<financial_currency>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(2)
+			</financial_currency>
+			<!-- 投资门槛 -->
+			<investment_threshold>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(4)
+			</investment_threshold>
+			<!--发售对象 -->
+			<Release_object>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(5) > td:nth-child(2)
+			</Release_object>
+			<!-- 发行地 -->
+			<issue_place>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(5) > td:nth-child(4)
+			</issue_place>
+			<!-- 发行时间 -->
+			<issue_date>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(6) > td:nth-child(2)
+			</issue_date>
+			<!-- 发行规模 -->
+			<issuing_scale>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(6) > td:nth-child(4)
+			</issuing_scale>
+			<!-- 成立时间 -->
+			<established_time>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1)
+				> tr:nth-child(7) > td:nth-child(2)
+			</established_time>
+			<!-- 成立规模 -->
+			<setup_scale>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(7) > td:nth-child(4)
+			</setup_scale>
+			<!--产品期限 -->
+			<lifetime_extension>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(8) > td:nth-child(2)
+			</lifetime_extension>
+			<!--预计收益 -->
+			<anticipated_income>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(9) > td:nth-child(2)
+			</anticipated_income>
+			<!--收益类型 -->
+			<returns_type>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(9) > td:nth-child(4)
+			</returns_type>
+			<!--投资方式 -->
+			<investment_way>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(10) > td:nth-child(2)
+			</investment_way>
+			<!-- 投资领域 -->
+			<investment_field>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1)
+				> tr:nth-child(10) > td:nth-child(4)
+			</investment_field>
+			<!--投资管理类型 -->
+			<investment_manage_type>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(11) > td:nth-child(2)
+			</investment_manage_type>
+			<!--投资管理人 -->
+			<investment_manager>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(11) > td:nth-child(4)
+			</investment_manager>
+			<!-- 资金托管行 -->
+			<escrow_line>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(12) > td:nth-child(2)
+			</escrow_line>
+			<!--资金托管费率 -->
+			<escrow_fee>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(12) > td:nth-child(4)
+			</escrow_fee>
+			<!-- 收益分配方式 -->
+			<distribution_type>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(13) > td:nth-child(2)
+			</distribution_type>
+			<!--申购赎回费率 -->
+			<redemptive_rate>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1)
+				> tr:nth-child(13) > td:nth-child(4)
+			</redemptive_rate>
+			<!-- 到期清算日 -->
+			<mature_time>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(14) > td:nth-child(2)
+			</mature_time>
+			<!-- 实际收益率 -->
+			<effective_rate>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(14) > td:nth-child(4)
+			</effective_rate>
+			<!-- 交易结构 -->
+			<deal_structure>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(15) > td:nth-child(2) > div:nth-child(1)
+			</deal_structure>
+			<!-- 信用增级措施 -->
+			<credit_enhancement>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(16) > td:nth-child(2)
+			</credit_enhancement>
+			<!-- 产品特点 -->
+			<product_feature>#con_tt_1 > table:nth-child(1) > tbody:nth-child(1)
+				> tr:nth-child(17) > td:nth-child(2)
+			</product_feature>
+			<!--其他相关信息 -->
+			<other_information>#con_tt_1 > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(18) > td:nth-child(2)
+			</other_information>
+			<!-- 原始url -->
+			<detailurl></detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.yanglee.com/product/product_Lists.aspx?ptype=@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://rmfygg.court.gov.cn/psca/lgnot/bulletin/page/0_0.html
+		</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableName>court_announcement</tableName>
+		<compareAtrr>bulletin_time</compareAtrr>
+		<tableXpath>
+			<bodyXPath>.contentDiv > table:nth-child(2) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td:nth-child(1) > a:nth-child(1)</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!-- 公告类型 -->
+			<announcement_type>.ft1616</announcement_type>
+			<!-- 公告人 ..法院 -->
+			<notice_people>.d23 > p:nth-child(1)</notice_people>
+			<!-- 当事人..法人 -->
+			<parties>p.pt10</parties>
+			<!-- 公告时间 -->
+			<bulletin_time>p.ft1424:nth-child(4)</bulletin_time>
+			<!-- 公告内容 -->
+			<content>.d22 > p:nth-child(1)</content>
+			<!-- 刊登版面 -->
+			<published_edition>p.ft1424:nth-child(2)</published_edition>
+			<!-- 刊登日期 -->
+			<posting_date>p.ft1424:nth-child(3)</posting_date>
+			<detailurl></detailurl>
+		</detailXpath>
+		<nextPageXpath>http://rmfygg.court.gov.cn/psca/lgnot/bulletin/page/0_@@@.html
+		</nextPageXpath>
+	</webBean>
+
+
+	<webBean>
+		<webUrl>http://bill.jr.jd.com/buy/list.htm
+		</webUrl>
+		<!-- <crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>jd_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.bill-goods-list
+			</bodyXPath>
+			<cloumXpath>li</cloumXpath>
+			<detailurlXpath> div.bill-info > h3:nth-child(1) </detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!--产品名称 -->
+			<pro_name> div:nth-child(1) > h3:nth-child(1)</pro_name>
+			<!--产品期数 -->
+			<pro_num>div:nth-child(1) > h3:nth-child(1)</pro_num>
+			<!--承兑银行 -->
+			<bill_bank>div:nth-child(1) > h3:nth-child(1) > span:nth-child(1)
+			</bill_bank>
+			<!--发布日期 -->
+			<publish_date> div:nth-child(1) > h3:nth-child(1) > span:nth-child(2)
+			</publish_date>
+			<!-- 发布时间 -->
+			<publish_time>div:nth-child(1) > h3:nth-child(1) > span:nth-child(2)
+			</publish_time>
+			<!-- 预期年化收益率 -->
+			<bill_rate> div:nth-child(1) > div:nth-child(2) > span:nth-child(1) >
+				b:nth-child(1)
+			</bill_rate>
+			<!--募集金额 -->
+			<bill_money> div:nth-child(1) > div:nth-child(2) > span:nth-child(2)
+				> b:nth-child(1)
+			</bill_money>
+			<!-- 理财期限 -->
+			<bill_day> div:nth-child(1) > div:nth-child(2) > span:nth-child(3) >
+				b:nth-child(1)
+			</bill_day>
+			<detailurl> div.bill-info > h3:nth-child(1)</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://bill.jr.jd.com/buy/list.htm?type=-1&from=&page=@@@
+		</nextPageXpath>
+	</webBean>
+
+
+	<webBean>
+		<webUrl>http://www.jinyinmao.com.cn/amp/list
+		</webUrl>
+		<!-- <crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>jingyinmao_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.amp-major-list
+			</bodyXPath>
+			<cloumXpath>li > a:nth-child(1)</cloumXpath>
+			<detailurlXpath>h1</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!--产品名称 -->
+			<pro_name></pro_name>
+			<!--产品期数 -->
+			<pro_num></pro_num>
+			<!--承兑银行 -->
+			<pro_bank>
+			</pro_bank>
+			<!--发布日期 -->
+			<pro_date>
+			</pro_date>
+			<!-- 发布时间 -->
+			<pro_time>
+			</pro_time>
+			<!-- 预期年化收益率 -->
+			<pro_rate>
+			</pro_rate>
+			<!--募集金额 -->
+			<pro_money>
+			</pro_money>
+			<!-- 理财期限 -->
+			<pro_limit>
+			</pro_limit>
+			<detailurl>a:nth-child(1)</detailurl>
+		</detailXpath>
+		<nextPageXpath>https://www.jinyinmao.com.cn/amp/list?page=@@@
+		</nextPageXpath>
+	</webBean>
+
+	<webBean>
+		<webUrl>http://www.pj.com/finance.shtml
+		</webUrl>
+		<!-- <crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>pj_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.licai_cen > ul
+			</bodyXPath>
+			<cloumXpath>li.xunhuanlc</cloumXpath>
+			<detailurlXpath>div.licai_cen_left > div.licai_cen_left_top >
+				div.licai_cp_left > ul > li > a:nth-child(1)
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!--产品名称 -->
+			<pro_name></pro_name>
+			<!--产品期数 -->
+			<pro_num></pro_num>
+			<!--承兑银行 -->
+			<pro_bank>
+			</pro_bank>
+			<!--发布日期 -->
+			<pro_date>
+			</pro_date>
+			<!-- 发布时间 -->
+			<pro_time>
+			</pro_time>
+			<!-- 预期年化收益率 -->
+			<pro_rate>
+			</pro_rate>
+			<!--募集金额 -->
+			<pro_money>
+			</pro_money>
+			<!-- 理财期限 -->
+			<pro_limit>
+			</pro_limit>
+			<detailurl>div.licai_cen_left > div.licai_cen_left_top >
+				div.licai_cp_left > ul > li > a:nth-child(1)
+			</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.pj.com/finance-@@@-6.shtml
+		</nextPageXpath>
+	</webBean>
+
+	<webBean>
+		<webUrl>http://www.yinpiao.com/bill</webUrl>
+		<!-- <crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>yinpiao_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>body
+			</bodyXPath>
+			<cloumXpath>dl.itmlist</cloumXpath>
+			<detailurlXpath>dt > h1 > a
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<!--产品名称 -->
+			<pro_name></pro_name>
+			<!--产品期数 -->
+			<pro_num></pro_num>
+			<!--承兑银行 -->
+			<pro_bank>
+			</pro_bank>
+			<!--发布日期 -->
+			<pro_date>
+			</pro_date>
+			<!-- 发布时间 -->
+			<pro_time>
+			</pro_time>
+			<!-- 预期年化收益率 -->
+			<pro_rate>
+			</pro_rate>
+			<!--募集金额 -->
+			<pro_money>
+			</pro_money>
+			<!-- 理财期限 -->
+			<pro_limit>
+			</pro_limit>
+			<detailurl>dt > h1 > a
+			</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.yinpiao.com/bill/@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://www.138jr.com/bill/</webUrl>
+		<crawlType>DETAIL</crawlType>
+		<!-- <crawlType>TABLE</crawlType> -->
+		<tableName>jr138_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.bank_41
+			</bodyXPath>
+			<cloumXpath>ul</cloumXpath>
+			<detailurlXpath>
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_bank></pro_bank>
+			<pro_date>
+			</pro_date>
+			<pro_rate>
+			</pro_rate>
+			<pro_money>
+			</pro_money>
+			<pro_limit>
+			</pro_limit>
+			<pro_type></pro_type>
+			<look_type></look_type>
+			<pro_place></pro_place>
+			<detailurl>
+			</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.138jr.com/bill/index.htm?curpage=@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://www.chinabill.cn/jsp/tradeList.jsp</webUrl>
+		<!--<crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>chinabill_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>body
+			</bodyXPath>
+			<cloumXpath></cloumXpath>
+			<detailurlXpath>
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+
+			<pro_money></pro_money>
+			<pro_rate></pro_rate>
+			<issue_date></issue_date>
+			<drawer_date></drawer_date>
+			<issue_place></issue_place>
+			<pro_limit></pro_limit>
+			<pro_type></pro_type>
+			<pro_bank></pro_bank>
+			<pro_type_name></pro_type_name>
+			<trade_site></trade_site>
+			<detailurl>
+			</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.chinabill.cn/@@@
+		</nextPageXpath>
+	</webBean>
+
+	<webBean>
+		<webUrl>http://www.htbill.com/di/</webUrl>
+		<!-- <crawlType>DETAIL</crawlType> -->
+		<crawlType>TABLE</crawlType>
+		<tableName>htbill_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.ct-info-ul
+			</bodyXPath>
+			<cloumXpath>dd</cloumXpath>
+			<detailurlXpath>li.oper > a
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_type>li.busiType</pro_type>
+			<pro_money>li.billMoney</pro_money>
+			<bill_type>li.billType</bill_type>
+			<pro_rate>li.rate</pro_rate>
+			<pro_place>li.address</pro_place>
+			<!-- <pro_limit></pro_limit> -->
+			<pro_bank>li.aceptor</pro_bank>
+			<detailurl>li.oper > a </detailurl>
+			<pro_date>li.operdate</pro_date>
+		</detailXpath>
+		<nextPageXpath>http://www.htbill.com/di/@@@
+		</nextPageXpath>
+	</webBean>
+
+	<webBean>
+		<webUrl>http://www.piaojuyi.com/ztinfo.asp</webUrl>
+		<crawlType>TABLE</crawlType>
+		<tableName>piaojuyi_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.rate_list
+			</bodyXPath>
+			<cloumXpath>ul</cloumXpath>
+			<detailurlXpath>li:nth-child(1) > a:nth-child(1)
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_money>li:nth-child(1)</pro_money>
+			<pro_date>li:nth-child(2) > a:nth-child(1) > font:nth-child(1)
+			</pro_date>
+			<pro_rate>li:nth-child(3) </pro_rate>
+			<pro_place>li:nth-child(4) </pro_place>
+			<pro_type>li:nth-child(5) </pro_type>
+			<bill_type>li:nth-child(6) </bill_type>
+			<detailurl>li:nth-child(1) > a:nth-child(1)</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.piaojuyi.com/ztinfo.asp?fbuser=&pagenum=@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://www.zgpj.net/piaoju.asp</webUrl>
+		<crawlType>TABLE</crawlType>
+		<tableName>zgpj_piaoju_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.middle > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) >
+				table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) >
+				td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td:nth-child(9) > a:nth-child(1)
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_num>td:nth-child(1)</pro_num>
+			<bill_type>td:nth-child(2)</bill_type>
+			<pro_type>td:nth-child(3)</pro_type>
+			<pro_money>td:nth-child(4)</pro_money>
+			<pro_limit>td:nth-child(5)</pro_limit>
+			<pro_place>td:nth-child(6)</pro_place>
+			<pro_rate>td:nth-child(7)</pro_rate>
+			<pro_date>td:nth-child(8)</pro_date>
+			<detailurl>td:nth-child(9) > a:nth-child(1)</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.zgpj.net/piaoju.asp?action=&province=&city=&dealcount=&callingkindid=&page=@@@
+		</nextPageXpath>
+	</webBean>
+
+	<webBean>
+		<webUrl>http://www.zgpj.net/user/baojia0.asp</webUrl>
+		<crawlType>TABLE</crawlType>
+		<tableName>zgpj_baojia0_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.contentleft1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) >
+				table:nth-child(2) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_date>td:nth-child(1)</pro_date>
+			<pro_place>td:nth-child(2)</pro_place>
+			<bill_type>td:nth-child(3)</bill_type>
+			<pro_bank>td:nth-child(4)</pro_bank>
+			<pro_rate>td:nth-child(5)</pro_rate>
+			<detailurl>td</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.zgpj.net/user/baojia0.asp?page=@@@
+		</nextPageXpath>
+	</webBean>
+	<webBean>
+		<webUrl>http://www.zgpj.net/user/baojia1.asp</webUrl>
+		<crawlType>TABLE</crawlType>
+		<tableName>zgpj_baojia1_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.contentleft1 > table:nth-child(1) > tbody:nth-child(1) >
+				tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) >
+				tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) >
+				table:nth-child(2) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+			<pro_date>td:nth-child(1)</pro_date>
+			<pro_place>td:nth-child(2)</pro_place>
+			<bill_type>td:nth-child(3)</bill_type>
+			<pro_bank>td:nth-child(4)</pro_bank>
+			<pro_rate>td:nth-child(5)</pro_rate>
+			<detailurl>td</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.zgpj.net/user/baojia1.asp?page=@@@
+		</nextPageXpath>
+	</webBean>
+	
+	<webBean>
+		<webUrl>http://www.pjtx.net/bill/</webUrl>
+		<crawlType>TABLE</crawlType>
+		<tableName>pjtx_bill</tableName>
+		<compareAtrr></compareAtrr>
+		<tableXpath>
+			<bodyXPath>.bill_list_c > table:nth-child(1) > tbody:nth-child(1)
+			</bodyXPath>
+			<cloumXpath>tr</cloumXpath>
+			<detailurlXpath>td:nth-child(7) > a:nth-child(1)
+			</detailurlXpath>
+		</tableXpath>
+		<detailXpath>
+
+			<pro_money>td:nth-child(1)</pro_money>
+			<bill_type>td:nth-child(2)</bill_type>
+			<pro_rate>td:nth-child(3)</pro_rate>
+			<look_type>td:nth-child(4)</look_type>
+			<pro_place>td:nth-child(5)</pro_place>
+			<pro_date>td:nth-child(6)</pro_date>
+			<detailurl>td:nth-child(7) > a:nth-child(1)</detailurl>
+		</detailXpath>
+		<nextPageXpath>http://www.pjtx.net/bill/?page=@@@
+		</nextPageXpath>
+	</webBean>
+</root>
